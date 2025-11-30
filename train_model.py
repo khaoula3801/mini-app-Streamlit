@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 # Charger ton dataset
-df = pd.read_csv("CHD (1).csv")
+df = pd.read_csv("CHD (1).csv", sep=";")
 
 X = df.drop("chd", axis=1)
 y = df["chd"]
